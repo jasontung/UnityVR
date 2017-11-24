@@ -212,4 +212,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090a125650566664ca9744f1258e0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiController: {fileID: 0}
+  uiController: {fileID: 114140397414338828}
+  reticle: {fileID: 0}
+  selectionRadial: {fileID: 0}
+  selectionSlider: {fileID: 0}
+  timerBar: {fileID: 0}
+  spawnCollider: {fileID: 65037968388607636}
+  targetObjectPool: {fileID: 114904721350144676}
+  gameDuration: 30
+  endDelay: 1.5
+  spawnProbabilty: 0.7
+  spawnInterval: 1

@@ -380,6 +380,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 0}
   reticle: {fileID: 0}
   gunContainer: {fileID: 4260664524522188}
+  shootingGalleryController: {fileID: 0}
+  eyeRaycaster: {fileID: 0}
   defaultLineLength: 70
   gunFlareVisibleSeconds: 0.07
   damping: 0.5

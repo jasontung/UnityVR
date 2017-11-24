@@ -13,10 +13,8 @@ public class ShootingGunController : MonoBehaviour
     public Transform cameraTransform;
     public Reticle reticle;
     public Transform gunContainer;
-    //----------------------------------------------------------
     public ShootingGalleryController shootingGalleryController;
-    //----------------------------------------------------------
-
+    public VREyeRaycaster eyeRaycaster;
     public float defaultLineLength = 70f;
     public float gunFlareVisibleSeconds = 0.07f;
     public float damping = 0.5f;
@@ -35,11 +33,11 @@ public class ShootingGunController : MonoBehaviour
 
     private void HandleDown()
     {
-        //----------------------------------------------------------
         if (shootingGalleryController.IsPlaying == false)
             return;
-        //----------------------------------------------------------
-        StartCoroutine(Fire(null));
+        ShootingTarget shootingTarget = eyeRaycaster.CurrentInteractible ? eyeRaycaster.CurrentInteractible.GetComponent<ShootingTarget>() : null;
+        Transform target = shootingTarget ? shootingTarget.transform : null;
+        StartCoroutine(Fire(target));
     }
 
     private IEnumerator Fire(Transform target)
