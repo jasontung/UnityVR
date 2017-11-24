@@ -372,13 +372,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350660b3543f4124f964a93742ba2f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunFlare: {fileID: 120622696830303020}
-  vrInput: {fileID: 0}
-  gameManager: {fileID: 0}
-  eyeRaycaster: {fileID: 0}
   audioSource: {fileID: 82275280884493188}
+  vrInput: {fileID: 0}
   gunEnd: {fileID: 4939453360699008}
-  flareParticles: {fileID: 198717042511575082}
+  flareParticle: {fileID: 198717042511575082}
+  gunFlare: {fileID: 120622696830303020}
   cameraTransform: {fileID: 0}
   reticle: {fileID: 0}
   gunContainer: {fileID: 4260664524522188}
@@ -579,7 +577,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dda6e6f5834a82344bf2a42ebd4c2d7b, type: 2}
+  - {fileID: 2100000, guid: 72f877726a229e74e9e6c572623465af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

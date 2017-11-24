@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4171359109332874}
-  - component: {fileID: 114253595456405332}
+  - component: {fileID: 114955560038706432}
   m_Layer: 0
   m_Name: ShootingGalleryController
   m_TagString: Untagged
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4771235834432150}
-  - component: {fileID: 114630304163529008}
+  - component: {fileID: 114140397414338828}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -171,36 +171,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12, y: 4, z: 23}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114253595456405332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1205836285140728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a14a189dd9944c418f1907aa5ecac8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_GameType: 1
-  m_IdealTargetNumber: 5
-  m_BaseSpawnProbability: 0.7
-  m_GameLength: 60
-  m_SpawnInterval: 1
-  m_EndDelay: 1.5
-  m_SphereSpawnInnerRadius: 5
-  m_SphereSpawnOuterRadius: 10
-  m_SphereSpawnMaxHeight: 15
-  m_SelectionSlider: {fileID: 0}
-  m_Camera: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_Reticle: {fileID: 0}
-  m_TimerBar: {fileID: 0}
-  m_TargetObjectPool: {fileID: 114904721350144676}
-  m_SpawnCollider: {fileID: 65037968388607636}
-  m_UIController: {fileID: 114630304163529008}
-  m_InputWarnings: {fileID: 0}
---- !u!114 &114630304163529008
+--- !u!114 &114140397414338828
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -208,14 +179,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1788755078040574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb2831809438ed4a9a76c065e8f3fb1, type: 3}
+  m_Script: {fileID: 11500000, guid: d55fd15001a224340b193d1720e49cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IntroUI: {fileID: 0}
-  m_OutroUI: {fileID: 0}
-  m_PlayerUI: {fileID: 0}
-  m_TotalScore: {fileID: 0}
-  m_HighScore: {fileID: 0}
+  introUI: {fileID: 0}
+  outroUI: {fileID: 0}
+  playerUI: {fileID: 0}
+  totalScore: {fileID: 0}
+  highScore: {fileID: 0}
 --- !u!114 &114904721350144676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,3 +201,15 @@ MonoBehaviour:
   m_Prefabs:
   - {fileID: 155142, guid: ab81a05a3c3285b47be13f5c0878ddec, type: 2}
   m_NumberInPool: 5
+--- !u!114 &114955560038706432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205836285140728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090a125650566664ca9744f1258e0423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiController: {fileID: 0}
